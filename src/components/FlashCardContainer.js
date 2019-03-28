@@ -16,9 +16,14 @@ class FlashcardContainer extends React.Component {
     // console.log(this.state)
     if (!this.props.flashcards) return null
     return (
-      <div className='card-container'>
+      <div >
         {this.props.flashcards.map(flashcard=>(
-            <FlashCardFront flashcard={flashcard}/>     
+          <div className='card-container'>
+            <div className='card-body'>
+              <FlashCardFront flashcard={flashcard}/>     
+              <FlashCardBack flashcard={flashcard}/> 
+            </div>    
+          </div>
         ))}
       </div>
     )
