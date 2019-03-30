@@ -1,7 +1,10 @@
 import React from 'react'
 import './flashcard.css'
 
+
 class FlashCardBack extends React.Component {
+
+
     render() {
       console.log(this.props.flashcard)
       return(
